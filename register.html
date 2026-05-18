@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Register - Jobseeker</title>
+</head>
+
+<body class="bg-slate-100 text-slate-800 font-sans antialiased min-h-screen">
+
+  <!-- HEADER -->
+  <header class="bg-slate-950 border-b border-slate-800 shadow-lg sticky top-0 z-50">
+
+    <div class="container mx-auto max-w-7xl px-6 py-4 flex justify-between items-center">
+
+      <h1 class="text-3xl font-black tracking-tight">
+        <a href="index.html" class="text-indigo-400 hover:text-indigo-300 transition">
+          Jobseeker
+        </a>
+      </h1>
+
+      <nav class="flex items-center gap-4 text-sm font-medium">
+
+        <a href="login.html"
+          class="text-slate-300 hover:text-white transition">
+          Login
+        </a>
+
+        <a href="register.html"
+          class="text-white">
+          Register
+        </a>
+
+        <a href="post-job.html"
+          class="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2.5 rounded-xl shadow-md transition">
+          <i class="fa fa-plus-circle mr-1"></i>
+          Post Job
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <!-- MAIN REGISTER SECTION -->
+  <section
+    class="relative overflow-hidden flex items-center justify-center min-h-[92vh] px-6 py-16 bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950">
+
+    <!-- BACKGROUND GLOWS -->
+    <div
+      class="absolute top-0 left-0 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl">
+    </div>
+
+    <div
+      class="absolute bottom-0 right-0 w-96 h-96 bg-indigo-400/10 rounded-full blur-3xl">
+    </div>
+
+    <!-- REGISTER CARD -->
+    <div
+      class="relative z-10 bg-white/95 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl w-full max-w-lg overflow-hidden">
+
+      <!-- TOP SECTION -->
+      <div
+        class="bg-gradient-to-r from-slate-950 to-indigo-950 px-8 py-10 text-center">
+
+        <div
+          class="w-20 h-20 mx-auto rounded-2xl bg-indigo-500/10 border border-indigo-400/20 flex items-center justify-center mb-5">
+
+          <i class="fa fa-user-plus text-3xl text-indigo-400"></i>
+
+        </div>
+
+        <h2 class="text-4xl font-black text-white">
+          Create Account
+        </h2>
+
+        <p class="text-slate-300 mt-3 text-sm">
+          Join Jobseeker and discover new career opportunities.
+        </p>
+
+      </div>
+
+      <!-- FORM -->
+      <div class="p-8">
+
+        <!-- MESSAGE EXAMPLES -->
+        <!--
+        <div class="bg-red-100 text-red-600 border border-red-200 px-4 py-3 rounded-xl mb-5">
+          Registration failed.
+        </div>
+
+        <div class="bg-green-100 text-green-700 border border-green-200 px-4 py-3 rounded-xl mb-5">
+          Registration successful.
+        </div>
+        -->
+
+        <form class="space-y-5">
+
+          <!-- FULL NAME -->
+          <div>
+
+            <label class="block text-sm font-semibold text-slate-700 mb-2">
+              Full Name
+            </label>
+
+            <div class="relative">
+
+              <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                <i class="fa fa-user"></i>
+              </span>
+
+              <input
+                type="text"
+                name="name"
+                placeholder="Juan Dela Cruz"
+                class="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+              />
+
+            </div>
+
+          </div>
+
+          <!-- EMAIL -->
+          <div>
+
+            <label class="block text-sm font-semibold text-slate-700 mb-2">
+              Email Address
+            </label>
+
+            <div class="relative">
+
+              <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                <i class="fa fa-envelope"></i>
+              </span>
+
+              <input
+                type="email"
+                name="email"
+                placeholder="you@example.com"
+                class="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+              />
+
+            </div>
+
+          </div>
+
+          <!-- CITY & STATE -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+            <!-- CITY -->
+            <div>
+
+              <label class="block text-sm font-semibold text-slate-700 mb-2">
+                City
+              </label>
+
+              <div class="relative">
+
+                <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                  <i class="fa fa-city"></i>
+                </span>
+
+                <input
+                  type="text"
+                  name="city"
+                  placeholder="Cabanatuan"
+                  class="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+                />
+
+              </div>
+
+            </div>
+
+            <!-- STATE -->
+            <div>
+
+              <label class="block text-sm font-semibold text-slate-700 mb-2">
+                State
+              </label>
+
+              <div class="relative">
+
+                <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                  <i class="fa fa-location-dot"></i>
+                </span>
+
+                <input
+                  type="text"
+                  name="state"
+                  placeholder="Nueva Ecija"
+                  class="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+                />
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- PASSWORD -->
+          <div>
+
+            <label class="block text-sm font-semibold text-slate-700 mb-2">
+              Password
+            </label>
+
+            <div class="relative">
+
+              <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                <i class="fa fa-lock"></i>
+              </span>
+
+              <input
+                type="password"
+                name="password"
+                placeholder="Create a password"
+                class="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+              />
+
+            </div>
+
+          </div>
+
+          <!-- CONFIRM PASSWORD -->
+          <div>
+
+            <label class="block text-sm font-semibold text-slate-700 mb-2">
+              Confirm Password
+            </label>
+
+            <div class="relative">
+
+              <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                <i class="fa fa-shield-halved"></i>
+              </span>
+
+              <input
+                type="password"
+                name="password_confirmation"
+                placeholder="Confirm your password"
+                class="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+              />
+
+            </div>
+
+          </div>
+
+          <!-- TERMS -->
+          <div class="flex items-start text-sm text-slate-600">
+
+            <input
+              type="checkbox"
+              class="mt-1 mr-3 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+            />
+
+            <p>
+              I agree to the
+              <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">
+                Terms & Conditions
+              </a>
+              and
+              <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">
+                Privacy Policy
+              </a>.
+            </p>
+
+          </div>
+
+          <!-- BUTTON -->
+          <button
+            type="submit"
+            class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 rounded-2xl shadow-lg transition duration-300">
+
+            <i class="fa fa-user-plus mr-2"></i>
+            Create Account
+
+          </button>
+
+          <!-- LOGIN -->
+          <p class="text-center text-slate-500 text-sm">
+
+            Already have an account?
+
+            <a href="login.html"
+              class="text-indigo-600 hover:text-indigo-800 font-semibold transition">
+
+              Login
+
+            </a>
+
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html>

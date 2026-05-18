@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Jobseeker - Find Your Next Career</title>
+</head>
+
+<body class="bg-slate-100 text-slate-800 font-sans antialiased">
+
+  <!-- HEADER -->
+  <header class="bg-slate-950 border-b border-slate-800 sticky top-0 z-50 shadow-lg">
+
+    <div class="container mx-auto max-w-7xl px-6 py-4 flex justify-between items-center">
+
+      <!-- LOGO -->
+      <h1 class="text-3xl font-black tracking-tight">
+        <a href="index.html"
+          class="text-indigo-400 hover:text-indigo-300 transition">
+          Jobseeker
+        </a>
+      </h1>
+
+      <!-- NAVIGATION -->
+      <nav class="flex items-center gap-4 text-sm font-medium">
+
+        <a href="login.html"
+          class="text-slate-300 hover:text-white transition">
+          Login
+        </a>
+
+        <a href="register.html"
+          class="text-slate-300 hover:text-white transition">
+          Register
+        </a>
+
+        <a href="post-job.html"
+          class="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2.5 rounded-xl shadow-md transition">
+          <i class="fa fa-plus-circle mr-1"></i>
+          Post Job
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <!-- HERO SECTION -->
+  <section
+    class="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 min-h-[500px] flex items-center">
+
+    <!-- BACKGROUND GLOW -->
+    <div
+      class="absolute top-0 left-0 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl">
+    </div>
+
+    <div
+      class="absolute bottom-0 right-0 w-96 h-96 bg-indigo-400/10 rounded-full blur-3xl">
+    </div>
+
+    <div
+      class="container mx-auto max-w-7xl px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+      <!-- LEFT CONTENT -->
+      <div>
+
+        <span
+          class="inline-block bg-indigo-500/10 border border-indigo-400/20 text-indigo-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
+
+          #1 Modern Job Portal
+
+        </span>
+
+        <h1
+          class="text-5xl md:text-6xl font-black text-white leading-tight tracking-tight">
+
+          Find Your
+          <span class="text-indigo-400">
+            Dream Career
+          </span>
+
+        </h1>
+
+        <p class="text-slate-300 text-lg mt-6 leading-relaxed max-w-xl">
+          Discover high-paying opportunities, connect with top companies,
+          and build your future with Jobseeker.
+        </p>
+
+        <!-- SEARCH -->
+        <form
+          class="mt-10 bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-5 shadow-2xl">
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+            <!-- KEYWORDS -->
+            <div class="relative">
+
+              <span
+                class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                <i class="fa fa-briefcase"></i>
+              </span>
+
+              <input
+                type="text"
+                placeholder="Job title or keyword"
+                class="w-full bg-slate-900/70 border border-slate-700 text-white placeholder-slate-400 pl-12 pr-4 py-3 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
+
+            </div>
+
+            <!-- LOCATION -->
+            <div class="relative">
+
+              <span
+                class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                <i class="fa fa-location-dot"></i>
+              </span>
+
+              <input
+                type="text"
+                placeholder="Location"
+                class="w-full bg-slate-900/70 border border-slate-700 text-white placeholder-slate-400 pl-12 pr-4 py-3 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
+
+            </div>
+
+            <!-- BUTTON -->
+            <button
+              class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 rounded-2xl shadow-lg transition duration-300">
+
+              <i class="fa fa-search mr-2"></i>
+              Search Jobs
+
+            </button>
+
+          </div>
+
+        </form>
+
+      </div>
+
+      <!-- RIGHT SIDE CARD -->
+      <div class="hidden lg:flex justify-center">
+
+        <div
+          class="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-8 shadow-2xl w-full max-w-md">
+
+          <div class="flex items-center justify-between mb-6">
+
+            <div>
+              <p class="text-slate-400 text-sm">Available Jobs</p>
+              <h2 class="text-4xl font-black text-white mt-1">2,500+</h2>
+            </div>
+
+            <div
+              class="w-16 h-16 rounded-2xl bg-indigo-500/20 flex items-center justify-center">
+
+              <i class="fa fa-chart-line text-2xl text-indigo-400"></i>
+
+            </div>
+
+          </div>
+
+          <div class="space-y-4">
+
+            <div
+              class="bg-slate-900/60 border border-slate-700 rounded-2xl p-4">
+
+              <div class="flex items-center justify-between">
+
+                <div>
+                  <h3 class="text-white font-semibold">UI/UX Designer</h3>
+                  <p class="text-slate-400 text-sm mt-1">Remote • $85k</p>
+                </div>
+
+                <span
+                  class="bg-emerald-500/20 text-emerald-300 text-xs px-3 py-1 rounded-full">
+                  Open
+                </span>
+
+              </div>
+
+            </div>
+
+            <div
+              class="bg-slate-900/60 border border-slate-700 rounded-2xl p-4">
+
+              <div class="flex items-center justify-between">
+
+                <div>
+                  <h3 class="text-white font-semibold">Frontend Developer</h3>
+                  <p class="text-slate-400 text-sm mt-1">Hybrid • $95k</p>
+                </div>
+
+                <span
+                  class="bg-indigo-500/20 text-indigo-300 text-xs px-3 py-1 rounded-full">
+                  New
+                </span>
+
+              </div>
+
+            </div>
+
+            <div
+              class="bg-slate-900/60 border border-slate-700 rounded-2xl p-4">
+
+              <div class="flex items-center justify-between">
+
+                <div>
+                  <h3 class="text-white font-semibold">Data Scientist</h3>
+                  <p class="text-slate-400 text-sm mt-1">Onsite • $110k</p>
+                </div>
+
+                <span
+                  class="bg-emerald-500/20 text-emerald-300 text-xs px-3 py-1 rounded-full">
+                  Hiring
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- JOB LISTINGS -->
+  <section class="container mx-auto max-w-7xl px-6 py-16">
+
+    <!-- SECTION HEADER -->
+    <div class="flex items-center justify-between mb-10">
+
+      <div>
+        <h2 class="text-4xl font-black text-slate-900">
+          Recent Jobs
+        </h2>
+
+        <p class="text-slate-500 mt-2">
+          Discover newly posted opportunities from top companies.
+        </p>
+      </div>
+
+      <a href="listings.html"
+        class="hidden md:inline-flex items-center text-indigo-600 font-semibold hover:text-indigo-800 transition">
+
+        View All Jobs
+        <i class="fa fa-arrow-right ml-2"></i>
+
+      </a>
+
+    </div>
+
+    <!-- JOB GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+      <!-- CARD -->
+      <div
+        class="bg-white border border-slate-200 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300 overflow-hidden">
+
+        <div class="p-7">
+
+          <div class="flex items-center justify-between mb-5">
+
+            <span
+              class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full">
+
+              Development
+
+            </span>
+
+            <span class="text-slate-400 text-sm">
+              Full Time
+            </span>
+
+          </div>
+
+          <h3 class="text-2xl font-bold text-slate-900">
+            Software Engineer
+          </h3>
+
+          <p class="text-slate-500 mt-4 leading-relaxed">
+            Build scalable software solutions and collaborate with talented developers.
+          </p>
+
+          <!-- INFO -->
+          <div class="space-y-3 mt-6">
+
+            <div class="flex items-center text-slate-600">
+
+              <i class="fa fa-location-dot text-indigo-500 mr-3"></i>
+              New York
+
+            </div>
+
+            <div class="flex items-center text-slate-600">
+
+              <i class="fa fa-wallet text-indigo-500 mr-3"></i>
+              $80,000 / year
+
+            </div>
+
+          </div>
+
+          <!-- BUTTON -->
+          <a href="details.html"
+            class="mt-8 block text-center bg-slate-900 hover:bg-indigo-600 text-white font-semibold py-3 rounded-2xl transition duration-300">
+
+            View Details
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div
+        class="bg-white border border-slate-200 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300 overflow-hidden">
+
+        <div class="p-7">
+
+          <div class="flex items-center justify-between mb-5">
+
+            <span
+              class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full">
+
+              Marketing
+
+            </span>
+
+            <span class="text-slate-400 text-sm">
+              Remote
+            </span>
+
+          </div>
+
+          <h3 class="text-2xl font-bold text-slate-900">
+            Marketing Specialist
+          </h3>
+
+          <p class="text-slate-500 mt-4 leading-relaxed">
+            Create campaigns and help brands grow through strategic marketing.
+          </p>
+
+          <div class="space-y-3 mt-6">
+
+            <div class="flex items-center text-slate-600">
+
+              <i class="fa fa-location-dot text-indigo-500 mr-3"></i>
+              San Francisco
+
+            </div>
+
+            <div class="flex items-center text-slate-600">
+
+              <i class="fa fa-wallet text-indigo-500 mr-3"></i>
+              $70,000 / year
+
+            </div>
+
+          </div>
+
+          <a href="details.html"
+            class="mt-8 block text-center bg-slate-900 hover:bg-indigo-600 text-white font-semibold py-3 rounded-2xl transition duration-300">
+
+            View Details
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div
+        class="bg-white border border-slate-200 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-1 transition duration-300 overflow-hidden">
+
+        <div class="p-7">
+
+          <div class="flex items-center justify-between mb-5">
+
+            <span
+              class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full">
+
+              Data Science
+
+            </span>
+
+            <span class="text-slate-400 text-sm">
+              Hybrid
+            </span>
+
+          </div>
+
+          <h3 class="text-2xl font-bold text-slate-900">
+            Data Scientist
+          </h3>
+
+          <p class="text-slate-500 mt-4 leading-relaxed">
+            Analyze data, create insights, and improve business decisions.
+          </p>
+
+          <div class="space-y-3 mt-6">
+
+            <div class="flex items-center text-slate-600">
+
+              <i class="fa fa-location-dot text-indigo-500 mr-3"></i>
+              Seattle
+
+            </div>
+
+            <div class="flex items-center text-slate-600">
+
+              <i class="fa fa-wallet text-indigo-500 mr-3"></i>
+              $90,000 / year
+
+            </div>
+
+          </div>
+
+          <a href="details.html"
+            class="mt-8 block text-center bg-slate-900 hover:bg-indigo-600 text-white font-semibold py-3 rounded-2xl transition duration-300">
+
+            View Details
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- MOBILE BUTTON -->
+    <div class="mt-10 text-center md:hidden">
+
+      <a href="listings.html"
+        class="inline-flex items-center text-indigo-600 font-semibold hover:text-indigo-800 transition">
+
+        View All Jobs
+        <i class="fa fa-arrow-right ml-2"></i>
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="container mx-auto max-w-7xl px-6 pb-16">
+
+    <div
+      class="bg-gradient-to-r from-slate-950 to-indigo-950 rounded-3xl overflow-hidden shadow-2xl">
+
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center px-10 py-14">
+
+        <!-- TEXT -->
+        <div>
+
+          <span
+            class="inline-block bg-indigo-500/20 text-indigo-300 px-4 py-2 rounded-full text-sm font-medium mb-5">
+
+            Hiring Made Easy
+
+          </span>
+
+          <h2 class="text-4xl font-black text-white leading-tight">
+            Looking for the perfect candidate?
+          </h2>
+
+          <p class="text-slate-300 text-lg mt-5 leading-relaxed">
+            Post your job listing today and connect with thousands of skilled professionals.
+          </p>
+
+        </div>
+
+        <!-- BUTTON -->
+        <div class="flex justify-start lg:justify-end">
+
+          <a href="post-job.html"
+            class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-4 rounded-2xl shadow-xl transition duration-300 text-lg">
+
+            <i class="fa fa-plus-circle mr-2"></i>
+            Post a Job
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html>
